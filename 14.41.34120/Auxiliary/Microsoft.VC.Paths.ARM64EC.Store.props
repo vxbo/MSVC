@@ -1,0 +1,19 @@
+<!--
+***********************************************************************************************
+Microsoft.MSVC.Paths.ARM64EC.Store.props
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+***********************************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VC_LibraryPath_VC_ARM64EC_Store Condition="'$(VC_LibraryPath_VC_ARM64EC_Store)' == '' and '$(SpectreMitigation)' != '' and '$(SpectreMitigation)' != 'false'">$(VCToolsInstallDir)lib\ARM64EC\store</VC_LibraryPath_VC_ARM64EC_Store>
+    <VC_LibraryPath_VC_ARM64EC_Store Condition="'$(VC_LibraryPath_VC_ARM64EC_Store)' == ''">$(VCToolsInstallDir)lib\ARM64EC\store</VC_LibraryPath_VC_ARM64EC_Store>
+    <VC_LibraryPath_VC_ARM64EC_Desktop Condition="'$(VC_LibraryPath_VC_ARM64EC_Desktop)' == ''">$(VCToolsInstallDir)lib\ARM64EC</VC_LibraryPath_VC_ARM64EC_Desktop>
+  </PropertyGroup>
+</Project>

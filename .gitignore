@@ -1,0 +1,7 @@
+*.sh
+*.lib
+*.o
+*.a
+*.dll
+*.exe
+*.pdb
